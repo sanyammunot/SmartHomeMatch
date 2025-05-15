@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI); // No options needed for MongoDB Driver v4+
+    await mongoose.connect(process.env.MONGO_URI); 
     console.log('✅ MongoDB Connected');
   } catch (err) {
     console.error('❌ MongoDB Connection Error:', err.message);
