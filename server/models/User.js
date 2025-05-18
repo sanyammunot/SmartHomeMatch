@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema({
   }],
   // Agency-specific
   agencyName: String,
+  YearsOfExperience: Number,
   services: [{
     type: { type: String, enum: ['security', 'lighting', 'climate', 'entertainment'] }
   }],
