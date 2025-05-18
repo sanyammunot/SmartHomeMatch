@@ -4,6 +4,7 @@ const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const api = axios.create({
   baseURL: `${API_URL}/api`, // Now uses environment variable
+  withCredentials: true
 });
 
 // Add JWT token to requests
