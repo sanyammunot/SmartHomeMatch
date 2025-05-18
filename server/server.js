@@ -10,7 +10,10 @@ const projectRoutes = require('./routes/projects');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://smart-home-match.vercel.app'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Database
