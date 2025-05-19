@@ -78,7 +78,12 @@ function Register() {
       const res = await api.post('/auth/register', submissionData);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('userId', res.data.userId); // Assuming backend returns userId
+      if (formData.userType === 'customer') {
       navigate('/dashboard');
+        } else if (formData.userType === 'agency') {
+      navigate('/'); // Change this path as per your routing setup
+        }
+
     } catch (err) {
       alert(`Registration failed: ${err.response?.data?.message || err.message}`);
     }
