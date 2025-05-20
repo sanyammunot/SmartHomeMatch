@@ -10,7 +10,7 @@ function Navbar() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     setIsLoggedIn(!!token);
-  }, [location]); // Re-run whenever location changes
+  }, [location]); 
 
   const handleLogout = () => {
     localStorage.removeItem('token');
