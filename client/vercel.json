@@ -1,0 +1,20 @@
+{
+    "routes": [
+        {
+            "scr": "/login",
+            "dest": "/"
+        },
+        {
+            "scr": "/register",
+            "dest": "/"
+        },
+        {
+            "scr": "/dashboard",
+            "dest": "/"
+        },
+        {
+            "scr": "/matches",
+            "dest": "/"
+        }
+    ]
+}
