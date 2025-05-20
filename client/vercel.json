@@ -1,20 +1,20 @@
 {
     "routes": [
         {
-            "scr": "/login",
-            "dest": "/"
+            "source": "/login",
+            "destination": "/"
         },
         {
-            "scr": "/register",
-            "dest": "/"
+            "source": "/register",
+            "destination": "/"
         },
         {
-            "scr": "/dashboard",
-            "dest": "/"
+            "source": "/dashboard",
+            "destination": "/"
         },
         {
-            "scr": "/matches",
-            "dest": "/"
+            "source": "/matches",
+            "destination": "/"
         }
     ]
 }
